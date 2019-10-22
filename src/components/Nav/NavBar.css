@@ -11,6 +11,19 @@
   height: 10%;
 }
 
+.menu-icon {
+  position: relative;
+  right: 10rem;
+  height: 18px;
+}
+
+
+.bell-icon {
+  position: relative;
+  right: 10rem;
+  height: 18px;
+}
+
 
 @media screen and (max-width: 500px) {
   .youtube-logo {
