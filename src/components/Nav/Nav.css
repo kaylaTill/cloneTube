@@ -1,15 +1,16 @@
 .main-nav {
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 45px;
   background-color: #ffffff;
 }
 
 .youtube-logo {
-  margin-left: 5em;
-  width: 15%;
-  height: 15%;
+  margin-left: 2.5em;
+  width: 10%;
+  height: 10%;
 }
+
 
 @media screen and (max-width: 500px) {
   .youtube-logo {
