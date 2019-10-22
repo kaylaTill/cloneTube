@@ -16,3 +16,11 @@
   line-height: 15x;
   font-size: 13px;
 }
+
+
+.search-button {
+  float: right;
+  width: 10%;
+  height: 145%;
+  margin-bottom: 60px;
+}
