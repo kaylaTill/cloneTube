@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import YTSearch from 'youtube-api-search';
-import SearchBar from './components/SearchBar/SearchBar';
+import Search from './components/SearchBar/SearchBar';
 import VideoList from './components/VideoList/VideoList';
 import VideoDetail from './components/VideoDetail/VideoDetail';
 import Nav from './components/Nav/Nav';
@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className="App">
         <Nav> 
-          <SearchBar onSearchVideos={ _.debounce(this.searchVideoHandler, 433) } />
+          <Search onSearchVideos={ _.debounce(this.searchVideoHandler, 433) } />
         </Nav>
         <VideoDetail videos={this.state.selectedVideo} > 
           <VideoList 
