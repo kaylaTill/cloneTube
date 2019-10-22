@@ -1,18 +1,18 @@
 .search-wrapper {
-  margin-left: 1em;
+  position: relative;
+  right: 22rem;
+  width: 200%;
+  height: 40%;
+  margin-bottom: 6px;
 }
 
 .search-bar {
-  width: 500px;
-  height: 31px;
+  width: 90%;
+  padding: 12px;
+  height: 30%;
   color: #cdcdcd;
   background-color: #ffffff;
-  border: 1px solid #ffffff;
-  border-color: black;
-  padding: 10px;
-  line-height: 24px;
-  border-radius: 3px;
-  font-size: 16px;
-  position: relative;
-  right: 20em;
+  border: 1px solid #cacaca;
+  line-height: 15x;
+  font-size: 13px;
 }

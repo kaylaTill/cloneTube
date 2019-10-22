@@ -7,8 +7,8 @@
 
 .youtube-logo {
   margin-left: 2.5em;
-  width: 11%;
-  height: 20%;
+  width: 10%;
+  height: 10%;
 }
 
 
@@ -18,10 +18,6 @@
   }
 
   .search-wrapper {
-    width: 100%;
-    margin-left: 0em;
-  }
-  .search-bar {
-    width: 94%;
+    width: 1000%;
   }
 }
