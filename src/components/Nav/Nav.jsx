@@ -1,7 +1,7 @@
 import React from "react";
 import YoutubeLogo from "./images/youtube-logo.png"
 import "./Nav.css";
-
+// change search bar placement
 const Nav = props => {
   return (
     <div className="menu">

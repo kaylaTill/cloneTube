@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cra-build-watch",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -25,5 +25,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cra-build-watch": "^3.0.0"
   }
 }

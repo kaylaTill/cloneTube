@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import YTSearch from 'youtube-api-search';
-import SearchBar from './components/SearchBar/searchBar';
-import VideoList from './components/VideoList/videoList';
-import VideoDetail from './components/VideoDetail/videoDetail';
+import SearchBar from './components/SearchBar/SearchBar';
+import VideoList from './components/VideoList/VideoList';
+import VideoDetail from './components/VideoDetail/VideoDetail';
 import Nav from './components/Nav/Nav';
 import './App.css';
 import API_KEY from './key';
