@@ -1,5 +1,5 @@
 .search-wrapper {
-  margin-left: 4.5em;
+  margin-left: 3em;
 }
 
 .search-bar {
@@ -13,4 +13,6 @@
   line-height: 24px;
   border-radius: 3px;
   font-size: 16px;
+  position: relative;
+  left: 3rem;
 }
