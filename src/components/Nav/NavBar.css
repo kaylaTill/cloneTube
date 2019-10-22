@@ -13,14 +13,15 @@
 
 .menu-icon {
   position: relative;
-  right: 5rem;
+  right: 8rem;
   height: 18px;
 }
 
 
 .bell-icon {
   position: relative;
-  height: 18px;
+  height: 20px;
+  right: 7rem;
 }
 
 
