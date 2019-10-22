@@ -11,18 +11,27 @@
   height: 10%;
 }
 
+.video-icon {
+  position: relative;
+  height: 15px;
+  right: 6rem;
+}
+
+
 .menu-icon {
   position: relative;
-  right: 8rem;
+  right: 5rem;
   height: 18px;
 }
 
 
 .bell-icon {
   position: relative;
-  height: 20px;
-  right: 7rem;
+  height: 18px;
+  right: 4rem;
 }
+
+
 
 
 @media screen and (max-width: 500px) {
