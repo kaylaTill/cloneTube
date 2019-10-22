@@ -22,6 +22,8 @@
   float: right;
   width: 10%;
   height: 148%;
+  color: #787878;
+  background-color: #f8f8f8;
   margin-bottom: 60px;
-  border-radius: 2px #cacaca;
+  border-radius: 20px #cacaca;
 }
