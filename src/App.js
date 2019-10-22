@@ -4,7 +4,7 @@ import YTSearch from 'youtube-api-search';
 import Search from './components/SearchBar/SearchBar';
 import VideoList from './components/VideoList/VideoList';
 import VideoDetail from './components/VideoDetail/VideoDetail';
-import Nav from './components/Nav/Nav';
+import NavBar from './components/Nav/NavBar';
 import './App.css';
 import API_KEY from './key';
 
@@ -23,9 +23,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Nav> 
+        <NavBar> 
           <Search onSearchVideos={ _.debounce(this.searchVideoHandler, 433) } />
-        </Nav>
+        </NavBar>
         <VideoDetail videos={this.state.selectedVideo} > 
           <VideoList 
             videos={this.state.videos} 
