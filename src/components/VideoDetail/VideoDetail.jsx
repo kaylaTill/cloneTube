@@ -25,12 +25,15 @@ const VideoDetail = props => {
 
   let videoId = props.videos.id.videoId,
   url = `https://youtube.com/embed/${videoId}`;
-  
+
   return (
     <div className="video-detail">
       <div className="video-detail-wrapper">
         <iframe src={url} title={`${props.videos.title}`} className="video-player" />
         <h3 className="main-video-title">{`${props.videos.snippet.title}`}</h3>
+        <small className="main-video-date">
+          {`${months[month]} ${day}, ${year}`}
+        </small>
         <hr className="divider"></hr>
         <small className="main-video-channelTitle">
           {`${props.videos.snippet.channelTitle}`}
@@ -40,9 +43,6 @@ const VideoDetail = props => {
           {`${props.videos.snippet.description}`}
         </small>
         
-        <small className="main-video-date">
-          {`${months[month]} ${day}, ${year}`}
-        </small>
 
       </div>
       {props.children}

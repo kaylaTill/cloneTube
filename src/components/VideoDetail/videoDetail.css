@@ -51,6 +51,11 @@ div {
   color: #000000;
 }
 
+
+.main-video-date {
+  margin-left: 10px;
+}
+
 .text-container {
   display: flex;
   flex-direction: column;
