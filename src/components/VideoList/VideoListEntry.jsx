@@ -13,7 +13,7 @@ const VideoListItem = props => {
         <img src={videoData.thumbnail} alt={videoData.title} className="thumbnail"/>
         <div className="text-container">
           <span className="video-list-title">{videoData.title}</span>
-          <small className="channelName">{videoData.channel}</small>
+          <small className="channelName" >{videoData.channel}</small>
         </div>
       </li>
     </div>

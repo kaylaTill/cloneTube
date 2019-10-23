@@ -36,7 +36,7 @@ div {
 }
 
 .channelName {
-  color: #000000;
+  color: #5f5f5f;
   display: inline-block;
 }
 
@@ -64,7 +64,7 @@ div {
 }
 
 .divider {
-  width: 120%;
+  width: 115%;
   height: -1px;
   color: #cac9c9;
 }
