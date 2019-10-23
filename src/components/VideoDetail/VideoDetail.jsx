@@ -25,6 +25,7 @@ const VideoDetail = props => {
 
   let videoId = props.videos.id.videoId,
   url = `https://youtube.com/embed/${videoId}`;
+  
   return (
     <div className="video-detail">
       <div className="video-detail-wrapper">
