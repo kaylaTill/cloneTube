@@ -12,8 +12,9 @@ class Search extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.clearSearchBar = this.clearSearchBar.bind(this);
   } 
-
+  
   handleChange(event) {
     event.preventDefault()
     this.setState({
@@ -21,9 +22,14 @@ class Search extends React.Component {
     })
   }
   
-  handleSubmit(event) {
+  async handleSubmit(event) {
     event.preventDefault()
-    this.props.sendTerm(this.state.value);
+    await this.props.sendTerm(this.state.value);
+    this.clearSearchBar()
+  }
+
+  clearSearchBar() {
+    this.setState({value: ""})
   }
 
   render() {

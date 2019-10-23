@@ -21,16 +21,18 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.searchVideoHandler(this.state.term); 
+    this.handleSearch(this.state.term); 
   }
 
 
   async getTerm(term) {
     await this.setState({term: term})
-    this.searchVideoHandler(this.state.term)
+    this.handleSearch(this.state.term)
   }
 
-  searchVideoHandler = term => YouTubeSearch({ key: API_KEY, term }, videos => this.setState({ videos, selectedVideo: videos[0] }));
+  handleSearch(term) {
+    YouTubeSearch({ key: API_KEY, term }, videos => this.setState({ videos, selectedVideo: videos[0] }));
+  }
 
   render() {
     return (
