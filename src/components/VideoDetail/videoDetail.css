@@ -91,6 +91,8 @@ div {
 
   .list-item {
     margin: 20px 0 20px 20px;
+    height: 10%;
+    color: #747474;
   }
 }
 
@@ -105,6 +107,7 @@ div {
     width: 100%;
     max-height: none;
     min-width: 0;
+    color: #747474;
   }
   .video-player {
     max-width: none;
