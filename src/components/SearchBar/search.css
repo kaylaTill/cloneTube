@@ -1,0 +1,30 @@
+.search-wrapper {
+  position: relative;
+  right: 20rem;
+  width: 200%;
+  height: 40%;
+  margin-bottom: 6px;
+}
+
+.search-bar {
+  width: 90%;
+  padding: 12px;
+  height: 30%;
+  color: #cdcdcd;
+  background-color: #ffffff;
+  border: 1px solid #cacaca;
+  line-height: 15x;
+  font-size: 13px;
+}
+
+
+.search-button {
+  float: right;
+  width: 10%;
+  height: 148%;
+  color: #787878;
+  background-color: #f8f8f8;
+  margin-bottom: 60px;
+  border: 1px solid #cacaca;
+  border-radius: 1px;
+}
