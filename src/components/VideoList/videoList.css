@@ -75,10 +75,12 @@
 }
 
 .video-list-wrapper {
+  position: relative;
+  left: 15%;
   margin-top: 0px;
   background-color: #f8f8f8;
   max-height: 480px;
   overflow: scroll;
   overflow-x: hidden;
-  padding-right: 30px;
+  padding-right: 10px;
 }
