@@ -19,7 +19,7 @@
 
 .switch {
   position: relative;
-
+  margin-left: 30px;
   float: left;
 }
 
@@ -35,10 +35,10 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  width: 100px;
-  height: 50px;
-  background: grey;
-  border-radius: 100px;
+  width: 45px;
+  height: 10px;
+  background: #cacaca;
+  border-radius: 50px;
   position: relative;
   transition: background-color .2s;
 }
@@ -46,14 +46,14 @@
 .react-switch-label .react-switch-button {
   content: '';
   position: absolute;
-  top: 2px;
+  top: 10px;
   left: 2px;
-  width: 45px;
-  height: 45px;
-  border-radius: 45px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
   transition: 0.2s;
-  background: #fff;
-  box-shadow: 0 0 2px 0 787878;
+  background: #ffffff;
+  box-shadow: 0 0 2px 0 #cacaca;
 }
 
 .react-switch-checkbox:checked + .react-switch-label .react-switch-button {

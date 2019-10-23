@@ -1,7 +1,6 @@
 import React from 'react';
 import './videoList.css';
 import VideoListEntry from './VideoListEntry';
-import Switch from "react-switch";
 
 
 class VideoList extends React.Component {
@@ -24,19 +23,17 @@ class VideoList extends React.Component {
           <label>
             <span className="autoplay">Autoplay</span>
             <div className="switch">
-              <>
-                <input
-                  className="react-switch-checkbox"
-                  id={`react-switch-new`}
-                  type="checkbox"
-                />
-                <label
-                  className="react-switch-label"
-                  htmlFor={`react-switch-new`}
-                >
-                  <span className={`react-switch-button`} />
-                </label>
-              </>
+              <input
+                className="react-switch-checkbox"
+                id={`react-switch-new`}
+                type="checkbox"
+              />
+              <label
+                className="react-switch-label"
+                htmlFor={`react-switch-new`}
+              >
+                <span className={`react-switch-button`} />
+              </label>
             </div>
           </label>
         </div>
