@@ -45,7 +45,6 @@ class App extends Component {
         selectedVideo: results[0]
       })
     });
-    // YouTubeSearch({ term, key: API_KEY, maxResults: 10 }, videos => this.setState({ videos, selectedVideo: videos[0] }));
   }
 
 

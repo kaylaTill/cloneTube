@@ -23,8 +23,8 @@ const VideoDetail = props => {
      "01" :'Dec',
   };
 
-  let videoId = props.video.id.videoId,
-  url = `https://youtube.com/embed/${videoId}`;
+  let videoId = props.video.id;
+  let url = `https://youtube.com/embed/${videoId}`;
 
   return (
     <div className="video-detail">
