@@ -9,27 +9,38 @@ import './App.css';
 import API_KEY from './key';
 
 class App extends Component {
-  state = {
-    videos: [],
-    selectedVideo: null,
-    term: ''
-  };
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      videos: [],
+      selectedVideo: null,
+      term: ''
+    };
+    this.getTerm = this.getTerm.bind(this);
+  }
 
   componentDidMount() {
-    this.searchVideoHandler('How I become a software engineer'); 
+    this.searchVideoHandler(this.state.term); 
   }
 
-  searchVideoHandler(term) {
-    YouTubeSearch({ key: API_KEY, term }, videos => this.setState({ videos, selectedVideo: videos[0] }));
+
+  getTerm(term) {
+    this.setState({
+      term: term
+    })
+    this.searchVideoHandler(this.state.term)
   }
-    
+
+  searchVideoHandler = term => YouTubeSearch({ key: API_KEY, term }, videos => this.setState({ videos, selectedVideo: videos[0] }));
 
   render() {
     return (
       <div className="App">
         <NavBar> 
-          <Search onSearchVideos={ _.debounce(this.searchVideoHandler, 433) } />
+          <Search sendTerm={this.getTerm} />
         </NavBar>
+        
         <VideoDetail videos={this.state.selectedVideo} > 
           <VideoList 
             videos={this.state.videos} 

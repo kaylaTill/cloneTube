@@ -6,10 +6,12 @@ import { removePropertiesDeep } from "@babel/types";
 class Search extends React.Component {
   constructor(props) {
     super(props) 
+
     this.state = {
       value: ''
     }
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   } 
 
   handleChange(event) {
@@ -18,9 +20,9 @@ class Search extends React.Component {
     })
   }
   
-  
-  handleSubmit() {
-    this.props.onSearchVideos(this.state.value);
+  handleSubmit(event) {
+    event.preventDefault()
+    this.props.sendTerm(this.state.value);
   }
 
   render() {
