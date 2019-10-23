@@ -4,17 +4,18 @@
   color: #000000;
   float: left;
   font-size: 13px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 25px;
 }
 
 .autoplay {
   position: relative;
   color: #787878;
-  font-size: 12px;
+  font-size: 11px;
   float: left;
   margin-top: 15px;
   left: 8.5rem;
+  font-weight: bold;
 }
 
 .switch {
@@ -36,7 +37,7 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  width: 35px;
+  width: 27px;
   height: 10px;
   background-color: #cacaca;
   border-radius: 50px;
@@ -48,8 +49,8 @@
   content: '';
   position: absolute;
   left: 2px;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   border-radius: 20px;
   transition: 0.2s;
   background: #787878;
