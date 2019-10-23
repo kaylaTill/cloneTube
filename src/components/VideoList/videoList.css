@@ -79,8 +79,8 @@
   left: 15%;
   margin-top: 40px;
   background-color: #f8f8f8;
-  max-height: 480px;
+  max-height: 400%;
   overflow: scroll;
-  overflow-x: hidden;
+  overflow-x: hidden; 
   padding-right: 10px;
 }
