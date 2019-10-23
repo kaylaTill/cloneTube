@@ -15,6 +15,7 @@ class Search extends React.Component {
   } 
 
   handleChange(event) {
+    event.preventDefault()
     this.setState({
       value: event.target.value
     })
@@ -28,8 +29,8 @@ class Search extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit} className="search-wrapper">
-          <input type="search" className="search-bar" onChange={this.handleChange} placeholder="Search" name="search"/>
-          <button className="search-button" type="submit"><i className="fa fa-search"></i></button>
+        <input type="search" className="search-bar" placeholder="Search" name="search" value={this.state.value} onChange={this.handleChange} />
+        <button className="search-button" type="submit"><i className="fa fa-search"></i></button>
       </form>
     );
   }

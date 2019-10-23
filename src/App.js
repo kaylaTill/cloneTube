@@ -25,10 +25,8 @@ class App extends Component {
   }
 
 
-  getTerm(term) {
-    this.setState({
-      term: term
-    })
+  async getTerm(term) {
+    await this.setState({term: term})
     this.searchVideoHandler(this.state.term)
   }
 
