@@ -21,7 +21,6 @@ describe('App', function () {
     it('should render a single NavBar component', function () {
         const wrapper = mount(<App />);
         var nav = NavBar;
-        // expect(wrapper.find(nav)).toExist();
         expect(wrapper.find(nav)).toMatchSnapshot()
     });
     
