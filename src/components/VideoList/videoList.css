@@ -1,24 +1,67 @@
 
 .next {
+  position: relative;
   color: #000000;
-  font-size: 15px;
   float: left;
+  font-size: 12px;
   margin-top: 25px;
-  margin-left: 10px;
+  margin-left: 25px;
 }
 
 .autoplay {
+  position: relative;
   color: #787878;
   font-size: 12px;
   float: left;
-  margin-top: 15px;
-  margin-left: 20px;
+  margin-top: 25px;
+  margin-left: 30px;
 }
 
 .switch {
-  width: 10px;
-  height: 10px;
+  position: relative;
+
   float: left;
+}
+
+
+.react-switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.react-switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  background: grey;
+  border-radius: 100px;
+  position: relative;
+  transition: background-color .2s;
+}
+
+.react-switch-label .react-switch-button {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 787878;
+}
+
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+.react-switch-label:active .react-switch-button {
+  width: 60px;
 }
 
 
@@ -32,6 +75,7 @@
 }
 
 .video-list-wrapper {
+  margin-top: 5px;
   margin: 2em 2px;
   background-color: #f8f8f8;
   max-height: 480px;

@@ -24,11 +24,19 @@ class VideoList extends React.Component {
           <label>
             <span className="autoplay">Autoplay</span>
             <div className="switch">
-              <Switch 
-                onChange={this.handleChange} 
-                checked={this.state.checked}
-                offColor="#787878" 
-                onColor="#787878" />
+              <>
+                <input
+                  className="react-switch-checkbox"
+                  id={`react-switch-new`}
+                  type="checkbox"
+                />
+                <label
+                  className="react-switch-label"
+                  htmlFor={`react-switch-new`}
+                >
+                  <span className={`react-switch-button`} />
+                </label>
+              </>
             </div>
           </label>
         </div>
