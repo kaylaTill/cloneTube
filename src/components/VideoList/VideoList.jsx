@@ -39,7 +39,7 @@ class VideoList extends React.Component {
         </div>
   
         <ul className="video-list-wrapper">
-          {videos.map(video => <VideoListEntry {...video} key={video.etag} onVideoSelect={this.props.onVideoSelect} />)}
+          {videos.map(video => <VideoListEntry {...video} key={video.id} onVideoSelect={this.props.onVideoSelect} />)}
         </ul>
       </div>
     );

@@ -2,18 +2,18 @@ import React from "react";
 import "./videoList.css";
 
 const VideoListItem = props => {
-  const videoData = {
-    title: props.snippet.title,
-    thumbnail: props.snippet.thumbnails.default.url,
-    channel: props.snippet.channelTitle
+  const video = {
+    title: props.title,
+    thumbnail: props.thumbnails.default.url,
+    channel: props.channelTitle
   };
   return (
     <div className="list-group-item">
       <li className="list-item" onClick={() => props.onVideoSelect(props)}>
-        <img src={videoData.thumbnail} alt={videoData.title} className="thumbnail"/>
+        <img src={video.thumbnail} alt={video.title} className="thumbnail"/>
         <div className="text-container">
-          <span className="video-list-title">{videoData.title}</span>
-          <small className="channelName" >{videoData.channel}</small>
+          <span className="video-list-title">{video.title}</span>
+          <small className="channelName" >{video.channel}</small>
         </div>
       </li>
     </div>
