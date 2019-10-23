@@ -96,7 +96,7 @@ div {
   .video-list-wrapper {
     width: 80%;
     padding-left: 0;
-    max-height: 400%;
+    max-height: 100%;
   }
 
   .list-item {
