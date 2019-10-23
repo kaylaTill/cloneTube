@@ -1,14 +1,36 @@
 import React from "react";
 import SearchBar from 'react-js-search';
 import "./search.css";
+import { removePropertiesDeep } from "@babel/types";
 
-const Search = props => {
+class Search extends React.Component {
+  constructor(props) {
+    super(props) 
+    this.state = {
+      value: ''
+    }
+    this.handleChange = this.handleChange.bind(this);
+  } 
+
+  handleChange(event) {
+    this.setState({
+      value: event.target.value
+    })
+  }
+  
+  
+  handleSubmit() {
+    this.props.onSearchVideos(this.state.value);
+  }
+
+  render() {
     return (
-      <div className="search-wrapper">
-          <input type="search" className="search-bar"  onChange={e => props.onSearchVideos(e.target.value)} placeholder="Search" name="search"/>
+      <form onSubmit={this.handleSubmit} className="search-wrapper">
+          <input type="search" className="search-bar" onChange={this.handleChange} placeholder="Search" name="search"/>
           <button className="search-button" type="submit"><i className="fa fa-search"></i></button>
-      </div>
+      </form>
     );
+  }
 }
 
 export default Search;

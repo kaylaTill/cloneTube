@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-import YTSearch from 'youtube-api-search';
+import YouTubeSearch from 'youtube-api-search';
 import Search from './components/SearchBar/SearchBar';
 import VideoList from './components/VideoList/VideoList';
 import VideoDetail from './components/VideoDetail/VideoDetail';
@@ -11,14 +11,18 @@ import API_KEY from './key';
 class App extends Component {
   state = {
     videos: [],
-    selectedVideo: null
+    selectedVideo: null,
+    term: ''
   };
 
   componentDidMount() {
-    this.searchVideoHandler('How I become a software engineer'); // for default will be guns and roses :>
+    this.searchVideoHandler('How I become a software engineer'); 
   }
 
-  searchVideoHandler = term => YTSearch({key: API_KEY, term}, videos => this.setState({videos, selectedVideo: videos[0]}));
+  searchVideoHandler(term) {
+    YouTubeSearch({ key: API_KEY, term }, videos => this.setState({ videos, selectedVideo: videos[0] }));
+  }
+    
 
   render() {
     return (
