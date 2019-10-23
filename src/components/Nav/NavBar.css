@@ -14,13 +14,13 @@
 .video-icon {
   position: relative;
   height: 15px;
-  right: 6rem;
+  right: 5rem;
 }
 
 
 .menu-icon {
   position: relative;
-  right: 5rem;
+  right: 4rem;
   height: 18px;
 }
 
@@ -28,15 +28,15 @@
 .bell-icon {
   position: relative;
   height: 18px;
-  right: 4rem;
+  right: 3rem;
 }
 
 
 .user-icon {
   position: relative;
-  height: 20px;
-  right: 3rem;
-  border-radius: 15px;
+  height: 24px;
+  right: 2rem;
+  border-radius: 20px;
 }
 
 
