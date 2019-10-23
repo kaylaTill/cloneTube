@@ -2,13 +2,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/react": "^9.3.0",
     "axios": "^0.19.0",
-    "lodash": "^4.17.5",
+    "chai": "^4.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "lodash": "^4.17.15",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-js-search": "^0.2.4",
     "react-scripts": "^3.2.0",
     "react-switch": "^5.0.1",
+    "react-test-renderer": "^16.11.0",
+    "react-with-addons": "0.0.1",
+    "sinon": "^7.5.0",
     "youtube-api-search": "0.0.5",
     "youtube-search": "^1.1.4"
   },
@@ -32,6 +39,8 @@
   },
   "devDependencies": {
     "cra-build-watch": "^3.0.0",
-    "webpack": "^4.41.2"
+    "jest": "^24.9.0",
+    "mocha": "^6.2.2",
+    "webpack": "^4.41.0"
   }
 }

@@ -49,11 +49,8 @@ class App extends Component {
 
 
 
-
-
-
   render() {
-    console.log(this.state.videos)
+    // console.log(this.state.videos)
     return (
       <div className="App">
         <NavBar> 
