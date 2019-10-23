@@ -10,12 +10,11 @@
 
 .autoplay {
   position: relative;
-  color: #787878;
+  color: #6d6d6d;
   font-size: 11px;
   float: left;
   margin-top: 14px;
   left: 9rem;
-  font-weight: bold;
 }
 
 .switch {
@@ -68,7 +67,6 @@
 
 .list-item {
   cursor: pointer;
-  margin: 2em 0 0;
   display: flex;
   align-items: flex-start;
 }
