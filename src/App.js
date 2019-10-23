@@ -35,6 +35,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.videos)
     return (
       <div className="App">
         <NavBar> 
@@ -44,7 +45,7 @@ class App extends Component {
         <VideoDetail videos={this.state.selectedVideo} > 
           <VideoList 
             videos={this.state.videos} 
-            onVideoSelect={selectedVideo => this.setState({selectedVideo})} 
+            onVideoSelect={video => this.setState({selectedVideo: video })} 
           /> 
         </VideoDetail>
       </div>

@@ -9,15 +9,15 @@ const VideoDetail = props => {
   return (
     <div className="video-detail">
       <div className="video-detail-wrapper">
-        <iframe src={url} title={props.videos.title} className="video-player" />
-        <h3 className="main-video-title">{props.videos.snippet.title}</h3>
+        <iframe src={url} title={`${props.videos.title}`} className="video-player" />
+        <h3 className="main-video-title">{`${props.videos.snippet.title}`}</h3>
         <hr className="divider"></hr>
         <small className="main-video-channelTitle">
-          {props.videos.snippet.channelTitle}
+          {`${props.videos.snippet.channelTitle}`}
         </small>
         <br />
         <small className="main-video-description">
-          {props.videos.snippet.description}
+          {`${props.videos.snippet.description}`}
         </small>
       </div>
       {props.children}
