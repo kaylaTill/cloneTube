@@ -1,12 +1,28 @@
 
 .next {
-  color: #787878;
+  color: #000000;
+  font-size: 15px;
+  float: left;
+  margin-top: 25px;
+  margin-left: 10px;
 }
 
 .autoplay {
-  color: #000000;
+  color: #787878;
   font-size: 12px;
+  float: left;
+  margin-top: 15px;
+  margin-left: 20px;
 }
+
+.switch {
+  width: 10px;
+  height: 10px;
+  float: left;
+}
+
+
+
 .list-item {
   cursor: pointer;
   margin: 2em 0 0;
