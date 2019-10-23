@@ -29,6 +29,7 @@
     ]
   },
   "devDependencies": {
-    "cra-build-watch": "^3.0.0"
+    "cra-build-watch": "^3.0.0",
+    "webpack": "^4.41.2"
   }
 }
