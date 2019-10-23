@@ -18,9 +18,9 @@ const VideoDetail = props => {
       "07" :'Jul',
       "08" :'Aug',
       "09" :'Sep',
-      "01" :'Oct',
-      "01" :'Nov',
-     "01" :'Dec',
+      "10" :'Oct',
+      "11" :'Nov',
+     "12" :'Dec',
   };
 
   let videoId = props.video.id;
