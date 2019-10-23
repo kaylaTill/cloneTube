@@ -21,7 +21,7 @@ class VideoList extends React.Component {
         <div className="next">Up next</div>
         <div className="autoplay">
           <label>
-            <span className="autoplay">Autoplay</span>
+            <span className="autoplay">AUTOPLAY</span>
             <div className="switch">
               <input
                 className="react-switch-checkbox"
