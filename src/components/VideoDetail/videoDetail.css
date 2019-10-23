@@ -44,7 +44,7 @@ div {
   color: #000000;
   font-weight: 400;
   margin-bottom: 0;
-  font-weight: bold;
+  font-weight: 520px;
 }
 
 .main-video-description {
@@ -58,8 +58,9 @@ div {
 }
 
 .divider {
-  width: 150%;
-
+  width: 120%;
+  height: -1px;
+  color: #cac9c9;
 }
 .video-detail-wrapper {
   max-width: 854px;
