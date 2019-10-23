@@ -32,6 +32,12 @@
 }
 
 
+.user-icon {
+  position: relative;
+  height: 20px;
+  right: 3rem;
+  border-radius: 15px;
+}
 
 
 @media screen and (max-width: 500px) {
