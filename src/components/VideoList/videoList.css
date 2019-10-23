@@ -3,8 +3,8 @@
   position: relative;
   color: #000000;
   float: left;
-  font-size: 12px;
-  margin-top: 25px;
+  font-size: 13px;
+  margin-top: 30px;
   margin-left: 25px;
 }
 
@@ -14,13 +14,13 @@
   font-size: 12px;
   float: left;
   margin-top: 15px;
-  left: 9.5rem;
+  left: 8.5rem;
 }
 
 .switch {
   float: left;
   position: relative;
-  left: 10rem;
+  left: 9rem;
 }
 
 
