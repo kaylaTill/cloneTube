@@ -42,8 +42,6 @@ const VideoDetail = props => {
         <small className="main-video-description">
           {`${props.video.description}`}
         </small>
-        
-
       </div>
       {props.children}
     </div>
