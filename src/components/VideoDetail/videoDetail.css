@@ -42,9 +42,10 @@ div {
 
 .main-video-title {
   color: #000000;
-  font-weight: 400;
+  font-size: 16px;
   margin-bottom: 0;
-  font-weight: 520px;
+  margin-left: 5px;
+  font-weight: lighter;
 }
 
 .main-video-description {
@@ -53,7 +54,7 @@ div {
 
 
 .main-video-date {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .text-container {
