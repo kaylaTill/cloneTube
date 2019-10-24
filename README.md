@@ -11,4 +11,4 @@
 - Developed with React and Webpack
 - Uses vanilla CSS with Components
 
-## Thank you for watching! :)
+## Thank's for watching! ;)
