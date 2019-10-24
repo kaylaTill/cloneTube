@@ -9,6 +9,6 @@
 ## Technologies
 - Tested with Jest and Enzyme
 - Developed with React and Webpack
-- Uses vanilla CSS with Components
+- Styled with vanilla CSS 
 
 ## Thank's for watching! ;)
