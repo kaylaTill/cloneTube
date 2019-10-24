@@ -35,7 +35,7 @@ class Search extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit} className="search-wrapper">
-        <input type="search" className="search-bar" placeholder="Search" name="search" value={this.state.value} onChange={this.handleChange} />
+        <input type="search" className="search-bar" placeholder="Search" name="search" autocomplete="off" value={this.state.value} onChange={this.handleChange} />
         <button className="search-button" type="submit"><i className="fa fa-search"></i></button>
       </form>
     );
