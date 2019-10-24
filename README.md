@@ -1,4 +1,8 @@
 # meTube
+- Youtube clone developed by Kayla Tillman
+
+### Preview
+![](clonetube.gif)
 
 
-![](clone_tube.gif)
+## Technologies
